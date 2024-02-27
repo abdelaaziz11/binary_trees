@@ -9,16 +9,9 @@
  */
 void binary_tree_delete(binary_tree_t *tree)
 {
-	binary_tree_t *delNode = malloc(sizeof(binary_tree_t));
-
-	delNode = tree;
-
-	if (!delNode)
+	if (!tree)
 		return;
-	else
-	{
-		free(delNode->right);
-		free(delNode->left);
-	}
-	free(delNode);
+	free(tree->right);
+	free(tree->left);
+	free(tree);
 }
