@@ -11,11 +11,13 @@ void binary_tree_delete(binary_tree_t *tree)
 {
 	if (!tree)
 		return;
+	else
+	{
 	if (tree)
 	{
 	free(tree->right);
 	free(tree->left);
-
+	}
 	free(tree);
 
 	}
