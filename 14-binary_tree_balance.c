@@ -1,7 +1,7 @@
 #include "binary_trees.h"
 
 /**
- * binary_tree_height - measures height of baniry tree
+ * binary_tree_height_balance - measures height of baniry tree
  * @tree: the root node
  * Return: 0 if NULL
  */
